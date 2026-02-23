@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  color: rgba(189, 192, 205, 1);
+}
+
+#logo {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: rgba(144, 177, 147, 1);
+}
+.heading-welcome {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1 rem;
+  font-weight: 800;
+  font-variation-settings: "wdth" 100;
+}
+
+.text-homepage {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.5 rem;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+}
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.01 rem;
+  font-weight: 40;
+  font-variation-settings: "wdth" 100;
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-item {
+  color: rgba(189, 192, 205, 1);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.5 rem;
+  font-weight: 800;
+  font-variation-settings: "wdth" 100;
+}
+
+.nav-item:visited {
+  color: rgba(189, 192, 205, 1);
+}
+.nav-item:hover {
+  color: rgba(144, 177, 147, 1);
+}
