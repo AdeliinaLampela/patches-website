@@ -6,6 +6,11 @@ body {
 a {
   text-decoration: none;
 }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .item-name {
   color: rgba(189, 192, 205, 1);
   text-decoration: none;
@@ -25,7 +30,7 @@ a {
 }
 
 .patch-img {
-  width: 30%;
+  width: 100%;
 }
 
 figure {

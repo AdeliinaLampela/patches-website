@@ -5,6 +5,11 @@ body {
 
 /*HEADER*/
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
@@ -16,6 +21,8 @@ body {
 .nav-links {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  align-items: center;
 }
 .nav-item {
   color: rgba(189, 192, 205, 1);
@@ -24,6 +31,7 @@ body {
   font-size: 1rem;
   font-weight: 800;
   font-variation-settings: "wdth" 100;
+  margin-left: 3rem;
 }
 
 .nav-item:visited {
