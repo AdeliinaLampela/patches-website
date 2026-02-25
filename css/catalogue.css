@@ -7,10 +7,6 @@ a {
   text-decoration: none;
 }
 
-.items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 .item-name {
   color: rgba(189, 192, 205, 1);
   text-decoration: none;
@@ -36,4 +32,27 @@ a {
 figure {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+/* BREAKING POINTS PATCHES LISTS */
+
+@media screen and (min-width: 440px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
