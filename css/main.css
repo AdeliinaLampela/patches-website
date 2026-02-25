@@ -8,6 +8,7 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -17,7 +18,9 @@ header {
   font-size: 2rem;
   color: rgba(144, 177, 147, 1);
 }
-
+#shoppingCartImg {
+  width: 30%;
+}
 .nav-links {
   list-style: none;
   padding-left: 0;
@@ -41,7 +44,20 @@ header {
   color: rgba(144, 177, 147, 1);
 }
 
+.navbar {
+  align-content: end;
+}
+
 /*MAIN*/
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.main-texts {
+  margin-left: 1rem;
+}
 
 .main-img {
   width: 50%;
