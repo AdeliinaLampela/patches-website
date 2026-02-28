@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+  color: rgba(189, 192, 205, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.arrow-row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#arrow-back {
+  width: 50px;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.item-name {
+  color: rgba(189, 192, 205, 1);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  font-variation-settings: "wdth" 100;
+}
+
+.item-price {
+  color: rgba(189, 192, 205, 1);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+}
+
+.patch-img {
+  width: 45%;
+}
+
+.product-details {
+  margin: 0;
+}
+
+#add-to-cart {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  font-variation-settings: "wdth" 100;
+}

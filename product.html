@@ -49,20 +49,33 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <a href="catalogue.html">
-        <img src="images/arrowBack.img.png" alt="Picture of arrow back." />
-      </a>
-      <img class="patch-img" src="images/patch1.img" alt="Image of a patch." />
-      <figure>
-        <figcaption>
-          <h1 class="item-name">Scout Patch</h1>
-          <p class="item-price">30 SEK</p>
-          <a href="shoppingCart.html">
-            <button id="add-to-cart">Add To Cart</button>
-          </a>
-        </figcaption>
-      </figure>
+    <main class="product-container">
+      <div class="arrow-row">
+        <a href="catalogue.html">
+          <img
+            id="arrow-back"
+            src="images/arrowBack.img.png"
+            alt="Return back."
+          />
+        </a>
+      </div>
+
+      <div class="product-content">
+        <img
+          class="patch-img"
+          src="images/patch1.img"
+          alt="Image of a patch."
+        />
+        <figure class="product-details">
+          <figcaption>
+            <h1 class="item-name">Scout Patch</h1>
+            <p class="item-price">30 SEK</p>
+            <a href="shoppingCart.html">
+              <button id="add-to-cart">Add To Cart</button>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
     </main>
     <footer>
       <p class="copyright">© PATCHES.JKPG 2026</p>
