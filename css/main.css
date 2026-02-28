@@ -25,19 +25,8 @@ header {
   color: rgba(144, 177, 147, 1);
 }
 
-/* hide haburger icon when bigger screen */
-.hamburger-container {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger-img {
-  width: 30px;
-}
 #shoppingCartImg {
-  width: 30%;
+  width: 35px;
 }
 .nav-links {
   list-style: none;
@@ -63,7 +52,23 @@ header {
 }
 
 .navbar {
-  align-content: end;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/* hide haburger icon when bigger screen */
+.hamburger-container {
+  display: none;
+}
+
+.cart-wrapper {
+  display: block;
+  margin-right: 15px;
+  align-content: center;
+}
+.cart-icon {
+  align-content: center;
 }
 
 /*MAIN*/
@@ -145,11 +150,19 @@ footer {
 /* BREAKING POINTS */
 
 @media screen and (max-width: 630px) {
+  #hamburger-button {
+    background-color: black;
+    border: 0;
+  }
+  .hamburger-container {
+    display: block;
+    .hamburger-img {
+      width: 30px;
+    }
+  }
+
   header {
     flex-direction: column;
-    .hamburger-container {
-      display: block;
-    }
 
     .nav-links {
       display: none; /* Hiding links*/
@@ -158,12 +171,12 @@ footer {
       top: 60px;
       left: 0;
       width: 100%;
-      background-color: black;
       z-index: 10;
+      padding: 20px 0;
     }
 
     .nav-links.open {
-      display: flex;
+      display: flex !important;
     }
   }
   main {

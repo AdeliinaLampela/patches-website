@@ -28,7 +28,14 @@
   <body>
     <header>
       <p id="logo">PATCHES.JKPG</p>
-      <nav class="navbar">
+      <nav class="navbar" id="nav-links">
+        <button id="hamburger-button" class="hamburger-container">
+          <img
+            src="images/hamburgerMenu.img.png"
+            alt="Hamburger menu."
+            class="hamburger-img"
+          />
+        </button>
         <ul class="nav-links">
           <li>
             <a href="index.html" class="nav-item">Home</a>
@@ -37,18 +44,17 @@
           <li>
             <a href="catalogue.html" class="nav-item">Patches</a>
           </li>
-
-          <li>
-            <a href="shoppingCart.html">
-              <img
-                id="shoppingCartImg"
-                src="images/shoppingBag.img.png"
-                alt="Shopping Cart"
-                class="nav-item"
-              />
-            </a>
-          </li>
         </ul>
+        <div class="cart-icon">
+          <a href="shoppingCart.html">
+            <img
+              id="shoppingCartImg"
+              src="images/shoppingBag.img.png"
+              alt="Shopping Cart"
+              class="nav-item"
+            />
+          </a>
+        </div>
       </nav>
     </header>
     <main class="product-container">
