@@ -32,6 +32,7 @@ a {
 figure {
   margin-left: 1rem;
   margin-right: 1rem;
+  padding-bottom: 20px;
 }
 
 /* BREAKING POINTS PATCHES LISTS */
@@ -41,6 +42,9 @@ figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  figure {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 630px) {
@@ -48,11 +52,17 @@ figure {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  figure {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 900px) {
   .items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  figure {
+    padding-bottom: 0px;
   }
 }

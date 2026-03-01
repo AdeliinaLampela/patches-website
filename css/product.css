@@ -15,11 +15,12 @@ a {
 
 .arrow-row {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #arrow-back {
-  width: 50px;
+  padding: 10px 10px 10px 10px;
+  width: 35px;
 }
 
 .product-content {
@@ -81,6 +82,17 @@ a {
       font-weight: 700;
       font-variation-settings: "wdth" 100;
     }
+  }
+  .item-name {
+    color: rgba(189, 192, 205, 1);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-variation-settings: "wdth" 100;
+  }
+  .product-details {
+    margin-left: 0.5rem;
   }
 }
 
