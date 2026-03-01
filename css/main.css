@@ -201,8 +201,8 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 20px;
-    height: 100%;
-    width: 30%;
+
+    width: 28%;
     z-index: 10;
     background-color: black;
   }
@@ -210,8 +210,11 @@ footer {
   .nav-links.open {
     display: flex !important;
     background-color: black;
-    padding: 20px 20px;
-    border: 2px solid white;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
 
     .nav-item {
       margin-left: 0.3rem;
@@ -221,13 +224,16 @@ footer {
       font-size: 1.1rem;
       font-weight: 700;
       font-variation-settings: "wdth" 100;
-      margin-left: 3rem;
+      margin-left: 0rem;
       text-align: center;
     }
     li {
       align-self: flex-start;
       border-bottom: 1px solid #333;
-      padding: 3px;
+      border-top: 1px solid #333;
+      padding: 15px 0px 15px 0px;
+      width: 100%;
+      text-align: start;
     }
   }
 
@@ -236,28 +242,63 @@ footer {
     margin: 0;
     padding: 1px 6px;
   }
-}
 
-main {
-  flex-direction: column;
-  .main-img {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-/* @media screen and (min-width: 630px) {
   main {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  main {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    .main-img {
+      width: 100%;
+      margin-left: 0;
+    }
+    .main-texts {
+      margin-left: 0rem;
+    }
+    .heading-welcome {
+      font-size: 1.7rem;
+      font-weight: 700;
+      font-variation-settings: "wdth" 100;
+    }
+
+    .text-homepage {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      font-variation-settings: "wdth" 100;
+    }
   }
-} */
+
+  @media screen and (max-width: 370px) {
+    .navbar {
+      .hamburger-img {
+        width: 25px;
+      }
+      #logo {
+        order: 2;
+        flex: 1;
+        font-size: 1rem;
+        padding: 10px 10px;
+        text-align: center;
+      }
+      #shoppingCartImg {
+        width: 25px;
+        margin: 0;
+        padding: 1px 6px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  main {
+    .heading-welcome {
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-variation-settings: "wdth" 100;
+    }
+
+    .text-homepage {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      font-variation-settings: "wdth" 100;
+    }
+  }
+}
