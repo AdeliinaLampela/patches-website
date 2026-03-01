@@ -7,12 +7,13 @@ body {
 
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   background-color: black;
   width: 100%;
+  z-index: 1000;
 }
 
 #logo {
@@ -23,16 +24,22 @@ header {
   font-style: normal;
   font-size: 2rem;
   color: rgba(144, 177, 147, 1);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px 10px;
 }
 
 #shoppingCartImg {
-  width: 35px;
+  width: 30px;
+  margin-left: 1.7rem;
 }
 .nav-links {
   list-style: none;
   padding-left: 0;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  text-align: center;
 }
 .nav-item {
   color: rgba(189, 192, 205, 1);
@@ -42,6 +49,7 @@ header {
   font-weight: 800;
   font-variation-settings: "wdth" 100;
   margin-left: 3rem;
+  text-align: center;
 }
 
 .nav-item:visited {
@@ -53,8 +61,11 @@ header {
 
 .navbar {
   display: flex;
-  align-content: center;
   justify-content: space-between;
+  align-content: center;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 /* hide haburger icon when bigger screen */
@@ -64,7 +75,6 @@ header {
 
 .cart-wrapper {
   display: block;
-  margin-right: 15px;
   align-content: center;
 }
 .cart-icon {
@@ -145,45 +155,94 @@ main {
 footer {
   margin-top: 3rem;
   border-top: 1px rgba(189, 192, 205, 1);
+  border-top: 1px solid #333;
 }
 
 /* BREAKING POINTS */
 
 @media screen and (max-width: 630px) {
+  header {
+    flex-direction: row !important;
+
+    .navbar {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  }
+
   #hamburger-button {
     background-color: black;
     border: 0;
   }
+
   .hamburger-container {
     display: block;
+    order: 1;
     .hamburger-img {
       width: 30px;
     }
   }
-
-  header {
+  #logo {
+    order: 2;
+    flex: 1;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .cart-wrapper {
+    display: block !important;
+    order: 3;
+  }
+  .nav-links {
+    display: none; /* Hiding links*/
     flex-direction: column;
+    position: absolute;
+    top: 20px;
+    height: 100%;
+    width: 30%;
+    z-index: 10;
+    background-color: black;
+  }
 
-    .nav-links {
-      display: none; /* Hiding links*/
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-      padding: 20px 0;
+  .nav-links.open {
+    display: flex !important;
+    background-color: black;
+    padding: 20px 20px;
+    border: 2px solid white;
+
+    .nav-item {
+      margin-left: 0.3rem;
+      color: rgba(189, 192, 205, 1);
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-variation-settings: "wdth" 100;
+      margin-left: 3rem;
+      text-align: center;
     }
-
-    .nav-links.open {
-      display: flex !important;
+    li {
+      align-self: flex-start;
+      border-bottom: 1px solid #333;
+      padding: 3px;
     }
   }
-  main {
-    flex-direction: column;
-    .main-img {
-      width: 100%;
-    }
+
+  #shoppingCartImg {
+    width: 32px;
+    margin: 0;
+    padding: 1px 6px;
+  }
+}
+
+main {
+  flex-direction: column;
+  .main-img {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
