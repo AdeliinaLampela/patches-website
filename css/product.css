@@ -95,16 +95,3 @@ a {
     margin-left: 0.5rem;
   }
 }
-
-/* @media screen and (min-width: 440px) {
-  .product-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .patch-img {
-    width: 100%;
-  }
- 
-} */
